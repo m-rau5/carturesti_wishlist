@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="480.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projects.carturestiwishlist.MenuController">
+   <center>
+      <TableView fx:id="wishlistTable" prefHeight="376.0" prefWidth="734.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="itemId" prefWidth="49.80000114440918" text="itemId" />
+          <TableColumn fx:id="itemName" prefWidth="338.39996337890625" text="Name" />
+            <TableColumn fx:id="basePrice" minWidth="0.0" prefWidth="83.20001220703125" text="Base Price" />
+            <TableColumn fx:id="lowestPrice" prefWidth="78.40008544921875" text="Lowest Price" />
+            <TableColumn fx:id="currentPrice" prefWidth="83.2000732421875" text="Current Price" />
+            <TableColumn fx:id="onSale" prefWidth="104.79997558593755" text="On Sale" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <Label fx:id="WishlistLabel" prefHeight="69.0" prefWidth="139.0" text="User's Wishlist" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="59.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <VBox prefHeight="59.0" prefWidth="100.0" />
+            <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="110.0" style="-fx-border-radius: 0px; -fx-border-insets: 0; -fx-background-color: #ff6666;" text="Log Out" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="EditWishlistButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="110.0" style="-fx-border-radius: 0px; -fx-border-insets: 0; -fx-background-color: #ff6666;" text="Edit Wishlist" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="UpdateButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="110.0" style="-fx-border-radius: 0px; -fx-border-insets: 0; -fx-background-color: #ff6666;" text="Update Wishlist" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <VBox prefHeight="59.0" prefWidth="471.0" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+   <right>
+      <VBox prefHeight="408.0" prefWidth="35.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <VBox prefHeight="408.0" prefWidth="35.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

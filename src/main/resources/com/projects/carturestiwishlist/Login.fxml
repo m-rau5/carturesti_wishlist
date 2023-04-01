@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projects.carturestiwishlist.LoginController">
+   <children>
+      <Button fx:id="LoginButton" layoutX="110.0" layoutY="201.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="178.0" style="-fx-border-radius: 0px; -fx-border-insets: 0; -fx-background-color: #ff6666;" text="LogIn" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="CreateAccountButton" layoutX="144.0" layoutY="240.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" style="-fx-border-radius: 0px; -fx-border-insets: 0; -fx-background-color: #f2f2f2;" text="Create Account" textAlignment="CENTER" textFill="#ff6666" textOverrun="CLIP">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="UsernameTF" layoutX="172.0" layoutY="105.0" prefHeight="26.0" prefWidth="168.0" promptText="Username" />
+      <PasswordField fx:id="PasswordTF" layoutX="172.0" layoutY="147.0" prefHeight="26.0" prefWidth="168.0" promptText="Password" />
+      <Label layoutX="75.0" layoutY="108.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="150.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="33.0" text="LogIn">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
