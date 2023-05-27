@@ -87,9 +87,9 @@ public class WishlistMenuController implements Initializable,hasAccesibleLink,us
                     getItems();
                 }
                 else {
-                    System.out.println("Not a carturesti link (please input a like of the form: https://carturesti.ro/...).");
+                    System.out.println("Not a carturesti or libris link (please input a like of the form: https://carturesti.ro/...).");
                     Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setContentText("Not a carturesti link, please input a like of the form: https://carturesti.ro/...");
+                    alert.setContentText("Not a carturesti or libris link, please input a like of the form: https://carturesti.ro/...");
                     alert.show();
                 }
 
@@ -127,7 +127,7 @@ public class WishlistMenuController implements Initializable,hasAccesibleLink,us
 
     @Override
     public boolean checkLink(String link) {
-        if(link.contains("https://carturesti.ro/")){
+        if(link.contains("https://carturesti.ro/") || link.contains("https://www.libris.ro/")){
             this.link = link;
             return true;
         }
